@@ -106,7 +106,7 @@ class BoxUpClass:
     def Write_Columns_2_Text(self):
         
         Textpath = self.File
-        Textpath = Textpath.replace('txt.txt', 'new_Text_File.txt')
+        Textpath = Textpath.replace('.txt', '_new_Text_File.txt')
         
         Write_Data_2_Text(self.All_Data, Textpath)
 
@@ -114,7 +114,7 @@ class BoxUpClass:
     def Write_New_Files(self):
         """Write the data to excel files in the format to save as txt and import to Lumerical"""
         Excelpath = self.File
-        Excelpath = Excelpath.replace('txt.txt', 'EXCEL.xlsx')
+        Excelpath = Excelpath.replace('.txt', '_EXCEL.xlsx')
 
         
         XLSX_Write_Data(Excelpath, self.XX,self.YY,self.ZZ)
